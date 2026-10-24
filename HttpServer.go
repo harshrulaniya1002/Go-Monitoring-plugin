@@ -70,7 +70,7 @@ func instrument(path string, next http.HandlerFunc) http.HandlerFunc {
 	}
 }
 
-func main1() {
+func main() {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("GET /home", instrument("/home",
